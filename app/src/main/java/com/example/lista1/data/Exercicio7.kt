@@ -8,7 +8,6 @@ class Exercicio7: Exercicio {
 
     override fun run(): String {
         val n = (1..100).random()
-        val contagem = for (i in n downTo 0) i
-        return "$i"
+        return (n downTo 0).toList().toString()
     }
 }

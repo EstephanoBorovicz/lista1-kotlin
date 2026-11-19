@@ -3,12 +3,13 @@ package com.example.lista1.data
 import com.example.lista1.model.Exercicio
 
 class Exercicio10: Exercicio {
-    override val id: Int
-        get() = TODO("Not yet implemented")
-    override val title: String
-        get() = TODO("Not yet implemented")
+    override val id = 10
+    override val title = "Média do alunos"
 
     override fun run(): String {
-        TODO("Not yet implemented")
+        val notas = IntArray(3){(1..10).random()}
+        val media = notas.sum()/notas.size
+        return "As notas do aluno são: ${notas[0]},${notas[1]} e ${notas[2]} " +
+                "e a média do aluno é: $media"
     }
 }
