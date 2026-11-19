@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.lista1.ui.theme.Lista1Theme
-import com.example.lista1.view.Exercicios
+import com.example.lista1.ui.view.ExerciciosScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Lista1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Exercicios(
+                    ExerciciosScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
