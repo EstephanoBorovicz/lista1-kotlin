@@ -15,7 +15,10 @@ class ExerciciosRepository {
         Exercicio8(),
         Exercicio9(),
         Exercicio10(),
-        Exercicio11()
+        Exercicio11(),
+        Exercicio12(),
+        Exercicio13(),
+        Exercicio14()
     ).sortedBy{it.id}
 
     fun buscarPorId(id: Int): Exercicio? =
