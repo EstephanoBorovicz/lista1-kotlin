@@ -1,6 +1,6 @@
 package com.example.lista1.model
 
-class Pessoa(var nome: String, var idade: Int, var cidade: String) {
+data class Pessoa(var nome: String, var idade: Int, var cidade: String) {
 
     fun getInfo(): String{
 
